@@ -1,0 +1,45 @@
+﻿div.ddl {
+    display: inline-block;
+    position: relative;
+}
+
+    div.ddl.ddl-open > div.ddl-data {
+        display: block;
+        position: absolute;
+        background-color: white;
+        width: calc(100% - 2px);
+        border: solid 1px gray;
+        border-radius: 4px;
+    }
+
+        div.ddl.ddl-open > div.ddl-data > div {
+            padding-bottom: 2px;
+        }
+
+        div.ddl.ddl-open > div.ddl-data > div:hover {
+            background-color: cornflowerblue;
+            color: white;
+            cursor: default;
+        }
+
+    div.ddl > div.ddl-display {
+        min-width: 100px;
+        height: 20px;
+        border: solid 1px gray;
+        display: inline-block;
+        position: relative;
+        padding-left: 5px;
+        padding-right: 20px;
+        border-radius: 4px;
+    }
+
+        div.ddl > div.ddl-display:after {
+            content: "🔻";
+            right: 0px;
+            position: absolute;
+            font-size: 14px;
+        }
+
+    div.ddl > div.ddl-data {
+        display: none;
+    }

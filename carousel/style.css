@@ -1,0 +1,55 @@
+﻿div.carousel {
+    width: 70%;
+    margin: 10px auto;
+    position: relative;
+}
+
+div.carousel-left,
+div.carousel-right {
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 500px;
+    cursor: pointer;
+}
+
+div.carousel-left {
+    left: 0px;
+}
+
+div.carousel-right {
+    right: 0px;
+}
+
+div.carousel-bullets {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
+
+    div.carousel-bullets > span {
+        border: solid 1px white;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+        div.carousel-bullets > span.active {
+            background-color: white;
+        }
+
+div.carousel-data > img {
+    width: 100%;
+    display: none;
+}
+
+    div.carousel-data > img.active {
+        display: block;
+    }
