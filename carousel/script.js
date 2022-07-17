@@ -1,11 +1,11 @@
 ﻿function initCarousel(elem, images) {
     elem.classList.add("carousel");
 
-    let imgHTML = "<img src='" + images.join("' /><img src='") + "' />";
+    let imgHTML = `<img src='${images.join("' /><img src='")}' />`;
 
     let bullets = "";
-    for (var i = 0; i < images.length; i++) {
-        bullets += "<span data-index=" + i + "></span>";
+    for (let i = 0; i < images.length; i++) {
+        bullets += `<span data-index="${i}"></span>`;
     }
 
     elem.innerHTML = `
@@ -54,7 +54,7 @@
     }
 
     function refreshCarousel() {
-        for (var i = 0; i < images.length; i++) {
+        for (let i = 0; i < images.length; i++) {
             if (i == index) {
                 imageList[i].classList.add("active");
                 bulletList[i].classList.add("active");
